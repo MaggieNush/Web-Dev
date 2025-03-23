@@ -3,50 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Linkedin Blog" />
-    <title>My Simple Blog</title>
+    <title>HTML Lists, Images, Tables & Forms</title>
   </head>
   <body>
-    <!-- Header Section -->
-    <header>
-      <h1>Welcome to My Simple Blog</h1>
+    <!--Ordered Shopping List-->
+    <h1>Shopping List</h1>
+    <h3>Items</h3>
+    <ol type="i">
+      <li>Rice</li>
+      <li>Beans</li>
+      <li>Flour</li>
+      <li>Tissue Paper</li>
+    </ol>
+    <!--Location Details-->
+    <h1>Where to Buy</h1>
+    <h3>Grocery Stall 42</h3>
+    <img src="/imgs/Grocery Stall.jpg" alt="Image of a Grocery Stall" width="450" height="300"/>
+    <h1>Contact Person</h1>
+    <h3>Stall Owner</h3>
+    <!--Contact Details-->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Names</th>
+          <th>Address</th>
+          <th>Phone Number</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John Wachira</td>
+          <td>Kamukunji Market Stall 42</td>
+          <td>0712345678</td>
+          <td>johnwachira@gmail.com</td>
+        </tr>
+      </tbody>
+    </table>
+    <!--Order Form-->
+    <h1>Order Form</h1>
+    <form action="" method="">
+      <label for="name">Name:</label>
+      <input type="text" id="customer_name" name="customer_name" required/>
+      <br><br/>
 
-      <!-- Navigation Section -->
-      <nav>
-        <a href="https://www.linkedin.com/in/margaret-nungari/">About Me</a> |
-        <a
-          href="https://www.linkedin.com/in/margaret-nungari/recent-activity/all/"
-          >Blog</a
-        >
-      </nav>
-    </header>
+      <label for="gender">Gender:</label>
+                <input type="radio" id="gender" name="gender" value="female"> Female
+                <input type="radio" id="gender" name="gender" value="male"> Male
+                <br><br>
 
-    <!-- Main Content Section -->
-    <section id="About Me">
-      <h2>My First Blog Post</h2>
-      <p>
-        Welcome to my first blog post! This is where I will share my experiences
-        and thoughts on various topics.
-      </p>
-      <img src="imgs/lady.png" alt="African Lady" />
-    </section>
+      <label for="name">New Customer:</label>
+      <select name="dropdown">New Customer:</label>
+        <option value="Yes">Yes</option> required/>
+        <option value="No">No</option> required/>
+        </select> <br><br>
 
-    <section id="Blog">
-      <h2>Why I Started This Blog</h2>
-      <p>
-        I have always wanted to share my ideas with the world. This blog is my
-        way of documenting my journey.
-      </p>
-    </section>
+      <label for="">Email:</label>
+      <input type="text" name="useremail" required/>
+      <br><br/>
 
-    <!-- Footer Section -->
-    <footer>
-      <p>
-        ©maggienungari.mn@gmail.com |
-        <a href="https://www.linkedin.com/in/margaret-nungari/" target="_blank"
-          >LinkedIn</a
-        >
-      </p>
-    </footer>
+      <label for="">Password:</label>
+      <input type="password" name="password" minlength="8" maxlength="20">
+      <br><br/>
+
+      <label for="">Order Date:</label>
+      <input type="date" name="order_date" required/>
+      <br><br/>
+
+      <label for="">Rate Your Experience:</label>
+        <input type="checkbox" name="Poor" value="Poor"> Poor
+        <input type="checkbox" name="Good" value="Good"> Good
+        <input type="checkbox" name="Excellent" value="Excellent"> Excellent
+        <br><br>
+      <input type="submit" value="Submit" />
   </body>
 </html>
